@@ -8,10 +8,10 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: |
-      npm install
-      npm run build
+      nvm install 14 --lts
+      yarn example:install
     command: |
-      npm run start
+      yarn example:start
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
